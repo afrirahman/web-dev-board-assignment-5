@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Dev Board </title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/3a6332738d.js" crossorigin="anonymous"></script>
+<style>
+    .font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+</style>
+</head>
+<body class="font-poppins bg-slate-100 ">
+    <section  class="max-w-screen-2xl mx-auto min-h-screen pb-10">
+
+        
+        <header>
+            <nav class="bg-[#FFFFFF] flex justify-between p-5 rounded-2xl">
+                <div class="flex items-center gap-4">
+                   <img class="w-9" src="assets/logo.png" alt="">
+                   <h1 class="text-4xl font-light text-[#00303C]">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                <div class="flex gap-4">
+                    
+                    <button id="desk-btn" class="btn border-none rounded-2xl bg-indigo-900 text-white  p-6 text-sm font-medium">Back to Desk</button>
+                
+                </div>
+            </nav>
+           </header>
+           <h1 class="text-2xl font-bold text-center my-8">Blogs</h1>
+
+           <section class="bg-[#FFFFFF] py-5 px-5 rounded-2xl">
+            <h3 class="text-lg font-bold">Question-1: What are the different ways to select an element in DOM?</h3>
+            <div class="border-solid border-1 border-slate-300 my-5"></div>
+            <p>The different ways to select an element in DOM are: </p>
+           <ol>
+                    <li>1.Using getElementById.</li>
+                    <li>2.Using getElementsByClassName.</li>
+                    <li>3.Using getElementsByTagName.</li>
+                    <li>4.Using querySelector.</li>
+                    <li>5.Using querySelectorAll.</li>
+           </ol>
+                
+           </section>
+
+           <section class="bg-[#FFFFFF] py-5 px-5 rounded-2xl mt-10">
+            <h3 class="text-lg font-bold">Question-2: What are the difference between innerHTML,innerText and textContent?</h3>
+            <div class="border-solid border-1 border-slate-300 my-5"></div>
+            <ul>
+                <li>1.textContent: is all text contained by an element and all its children that are for purposes only</li>
+                <li>2.innerText: returns all text contained by an element and all its child elements.</li>
+                <li>3.innerHTML : returns all text,including html tags, that is contained by an element.</li>
+            </ul>
+           </section>
+           <section  class="bg-[#FFFFFF] py-5 px-5 rounded-2xl mt-10">
+            <h3 class="text-lg font-bold">Question-3: What is event delegation in the DOM?</h3>
+            <div class="border-solid border-1 border-slate-300 my-5"></div>
+            <p>Event delegation refers to the process of using event propagation to handling events at a higher level in the DOM than the element on which the event originated.</p>
+           </section>
+
+
+           <section  class="bg-[#FFFFFF] py-5 px-5 rounded-2xl mt-10">
+            <h3 class="text-lg font-bold">Question-4: What is event bubbling in the DOM?</h3>
+            <div class="border-solid border-1 border-slate-300 my-5"></div>
+           <p>Event bubbling in the DOM is a process that propagates events from an element to its parent elements.</p>
+           </section>
+
+
+           <section  class="bg-[#FFFFFF] py-5 px-5 rounded-2xl mt-10">
+            <h3 class="text-lg font-bold">Question-5:How do you create,add and remove elements using javaScript?</h3>
+            <div class="border-solid border-1 border-slate-300 my-5"></div>
+            <ul>
+                <li>1.Creating elements:
+                    document.createElement() method
+                </li>
+                <li>2.Adding elements:
+                    <br>
+                    a.appendChild() method
+                    <br>
+                    b.insertBefore() method
+                    <br>
+                    c.Use append() and prepend() method
+                </li>
+                <li>3.Removing elements:
+                    <br>
+                    a.Using remove() method
+                    <br>
+                    b. Using removeChild() method
+                    <br>
+                    c. Using replaceChild() method
+                </li>
+            </ul>
+           </section>
+
+    </section>
+    <script>
+        document.getElementById('desk-btn').addEventListener('click',function(){
+            window.location.href='./index1.html';
+        })
+    </script>
+    
+</body>
+</html>
